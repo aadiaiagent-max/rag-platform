@@ -1,0 +1,17 @@
+[
+  {
+    "id": "doc-agents",
+    "text": "An agent runtime executes a loop: the model may call tools, the runtime runs those tools, and results are fed back until a final answer. Streaming events help UIs show progress. Memory stores keep conversation history across turns.",
+    "metadata": { "topic": "agents" }
+  },
+  {
+    "id": "doc-rag",
+    "text": "Retrieval-augmented generation chunks documents, embeds them into vectors, retrieves the nearest neighbors for a query, and conditions the answer on that context. Evaluations often measure hit rate of relevant chunks in top-k results.",
+    "metadata": { "topic": "rag" }
+  },
+  {
+    "id": "doc-gateway",
+    "text": "An LLM gateway routes requests across providers, enforces rate limits, and records usage. It sits between applications and model APIs so teams can swap vendors without rewriting clients.",
+    "metadata": { "topic": "gateway" }
+  }
+]
