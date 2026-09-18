@@ -2,11 +2,11 @@
 
 A small, typed **RAG platform**: chunk → embed → retrieve → answer, plus a hit-rate eval.
 
-Portfolio project for Senior SWE / AI-platform roles — shows the retrieval loop as real code, not a notebook demo.
+Shows the retrieval loop as real code, not a notebook demo. Small surface area — readable in one sitting.
 
 ## Why this exists
 
-Hiring managers ask how you'd ship RAG. This repo answers with a readable pipeline:
+Shipping RAG means a clear pipeline, not a slide deck. This repo answers with readable code:
 
 1. Chunk documents (window + overlap)
 2. Embed with a pluggable `Embedder`
@@ -51,7 +51,7 @@ const { answer, citations } = await rag.ask("What is RAG?");
 - **Mock-first embeddings** — CI stays offline; swap in OpenAI/Voyage later via `Embedder`
 - **Explicit chunking params** — no magic splitters buried in deps
 - **Measurable retrieval** — `evaluateRetrieval` returns hit rate, not vibes
-- **Tiny surface area** — easy to walk in an interview
+- **Small surface area** — readable in one sitting
 
 ## Layout
 
